@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap Parser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2> XML Sitemap Parser</h2>
+
+    <label for="sitemap_url"> Sitemap URL:</label>
+    <input type="text" id="sitemap_url" placeholder="https://example.com/sitemap.xml">
+
+    <label for="start_date"> Start Date:</label>
+    <input type="date" id="start_date">
+
+    <label for="end_date"> End Date:</label>
+    <input type="date" id="end_date">
+
+    <label for="content_type"> Content Type:</label>
+    <select id="content_type">
+        <option value="">All</option>
+        <option value="post">Post</option>
+        <option value="page">Page</option>
+        <option value="product">Product</option>
+    </select>
+
+    <button id="parse"> Parse Sitemap</button>
+
+    <div id="output">
+        <h3>Results:</h3>
+        <pre id="result_text">No results yet...</pre>
+    </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
