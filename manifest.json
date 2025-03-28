@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "XML Sitemap Parser",
+  "version": "2.0",
+  "description": "Extract URLs from sitemaps",
+  "permissions": ["tabs", "storage", "activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1:8000/*"],
+  "action": {
+    "default_title": "Open Sitemap Fetcher",
+    "default_popup": "/templates/index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

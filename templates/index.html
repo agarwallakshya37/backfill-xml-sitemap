@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap Crawler</title>
+    <script defer src="static/script.js"></script> <!-- Load external script -->
+</head>
+<body>
+<h2>Sitemap Crawler</h2>
+
+<label>Sitemap URL:</label>
+<input type="text" id="sitemapUrl" placeholder="Enter sitemap URL"><br>
+
+<label>Start Date:</label>
+<input type="date" id="startDate"><br>
+
+<label>End Date:</label>
+<input type="date" id="endDate"><br>
+
+<label>Content Filter:</label>
+<input type="text" id="contentFilter" placeholder="Enter filter (optional)"><br>
+
+<button id="fetchBtn">Fetch URLs</button>
+
+<h3>Extracted URLs:</h3>
+<div id="urlList"></div>
+
+<button id="copyBtn" style="display: none;">Copy All URLs</button>
+</body>
+</html>
